@@ -42,6 +42,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
+      env:
+        WHO_TO_TRUST: ${{ secrets.SECRET_TOKEN }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
