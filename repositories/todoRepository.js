@@ -59,7 +59,7 @@ class TodoRepository {
       const todo = await Todo.findOne({
         where: {
           id
-        }
+        } 
       })
   
       if (!todo) {

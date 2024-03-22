@@ -61,7 +61,7 @@ describe('GET List Todo /api/todo', () => {
       .expect(200)
       .then(response => {
         const { body } = response
-
+        console.log(body)
         expect(body.length).toEqual(5)
         done()
       })
@@ -71,17 +71,17 @@ describe('GET List Todo /api/todo', () => {
   })
 })
 
-describe('GET Todo By Id /api/todo/:id', () => {
+describe('GET Detail Todo /api/todo/:id', () => {
   it('GET /api/todo/:id', (done) => {
     request(app)
-      .get(`${BASE_URL}/1005`)
+      .get(`${BASE_URL}/1001`)
       .expect('Content-Type', /json/)
       .expect(200)
       .then(response => {
         const { body } = response
         const { id, title} = body
-        expect(id).toEqual(1005)
-        expect(title).toBe('todo 5')
+        expect(id).toEqual(1001)
+        expect(title).toBe('todo 1')
         done()
       })
       .catch(err => {
@@ -112,7 +112,8 @@ describe('POST Create Todo /api/todo', () => {
       id:1006,
       title:'todo 6',
       createdAt: new Date(),
-      updatedAt: new Date()
+      updatedAt: new Date(),
+      destroyTime: new Date()
     }
     request(app)
       .post(`${BASE_URL}`)
@@ -125,7 +126,6 @@ describe('POST Create Todo /api/todo', () => {
         expect(message).toBe('Todo Added Successfully')
         expect(id).toEqual(1006)
         expect(title).toBe('todo 6')
-        console.log(body)
         done()
       })
       .catch(err => {
@@ -137,10 +137,10 @@ describe('POST Create Todo /api/todo', () => {
 describe('PUT Update Todo /api/todo/:id', () => {
   it('PUT /api/todo/:id', (done) => {
     const service = {
-      title:'todo 6 update'
+      title:'todo 5 update'
     }
     request(app)
-      .put(`${BASE_URL}/1006`)
+      .put(`${BASE_URL}/1005`)
       .send(service)
       .expect(200)
       .then(response => {

@@ -2,6 +2,7 @@
 const {
   Model
 } = require('sequelize');
+const { destroy } = require('../repositories/todoRepository');
 module.exports = (sequelize, DataTypes) => {
   class Todo extends Model {
     /**
@@ -17,7 +18,8 @@ module.exports = (sequelize, DataTypes) => {
     title: DataTypes.STRING
   }, {
     sequelize,
-    modelName: 'Todo',
+    paranoid: true,
+    modelName: 'Todo'
   });
   return Todo;
 };
