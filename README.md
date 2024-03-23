@@ -11,6 +11,7 @@ To run this project you must have installed several things below on your pc:
 - NodeJs
 - PostgreSQL
 - NPM
+- Docker
 - VisualStudioCode (or other IDE)
 
 ## Getting Started
