@@ -4,6 +4,7 @@
 - Implement CI/CD using Github Actions
 - Implement Unit Testing using Jest
 - Implement Docker
+- Implement Sequelize-CLI
 
 ## Requirement
 To run this project you must have installed several things below on your pc:
@@ -38,6 +39,7 @@ npm run dev
 - [Express](https://expressjs.com/en/5x/api.html) - Express is a minimal and flexible Node.js web application framework.
 - [PostgreSQL](https://www.postgresql.org/) - PostgreSQL is a powerful, open source object-relational database system.
 - [NPM](https://docs.npmjs.com/about-npm) - npm is the world's largest software registry used to manage private development.
-- [VisualStudioCode]() - Visual Studio Code is a lightweight but powerful source code editor which available for Windows, macOS and Linux.
-- [Sequelize]() - Sequelize is an easy-to-use and promise-based Node.js ORM tool for Postgres, MySQL, MariaDB, etc.
-- [Jest]() - Jest is delightful javascript testing.
+- [VisualStudioCode](https://code.visualstudio.com/docs) - Visual Studio Code is a lightweight but powerful source code editor which available for Windows, macOS and Linux.
+- [Sequelize](https://sequelize.org/) - Sequelize is an easy-to-use and promise-based Node.js ORM tool for Postgres, MySQL, MariaDB, etc.
+- [Jest](https://www.npmjs.com/package/jest) - Jest is delightful javascript testing.
+- [Docker](https://docs.docker.com/get-started/overview/) - Docker is an open platform for developing, shipping, and running applications.
