@@ -27,8 +27,8 @@ jobs:
         image: postgres
         # Provide the password for postgres
         env:
-          POSTGRES_USER: 'postgres'
-          POSTGRES_PASSWORD: 'postgres'
+          POSTGRES_USER: "postgres"
+          POSTGRES_PASSWORD: "postgres"
         # Set health checks to wait until postgres has started
         options: >-
           --health-cmd pg_isready
@@ -42,8 +42,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      env:
-        WHO_TO_TRUST: ${{ secrets.SECRET_TOKEN }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
@@ -51,3 +49,5 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm run test
+      env:
+        WHO_TO_TRUST: ${{ secrets.SECRET_TOKEN }}
