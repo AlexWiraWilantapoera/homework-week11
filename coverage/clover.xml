@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1711158148009" clover="3.2.0">
-  <project timestamp="1711158148009" name="All files">
+<coverage generated="1711113420130" clover="3.2.0">
+  <project timestamp="1711113420130" name="All files">
     <metrics statements="147" coveredstatements="140" conditionals="18" coveredconditionals="14" methods="21" coveredmethods="21" elements="186" coveredelements="175" complexity="0" loc="147" ncloc="147" packages="8" files="10" classes="10"/>
     <package name="sequelize-example">
       <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -24,7 +24,7 @@
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
       </file>
     </package>
     <package name="sequelize-example.controllers">
