@@ -6,20 +6,22 @@ const config = {
     password: process.env.POSTGRES_PASSWORD,
     database: process.env.DB_NAME,
     host: "localhost",
-    dialect: "postgres"
+    dialect: "postgres",
+    port: 5432
   },
   test: {
     username: process.env.POSTGRES_USER,
     password: process.env.POSTGRES_PASSWORD,
     database: process.env.DB_TEST,
     host: "localhost",
-    dialect: "postgres"
+    dialect: "postgres",
+    port: 5432
   },
   docker: {
     username: process.env.POSTGRES_USER,
     password: process.env.POSTGRES_PASSWORD,
     database: process.env.DB_NAME,
-    host: process.env.DB_HOST,
+    host: "localhost",
     dialect: "postgres",
     port: process.env.PGPORT
   },
