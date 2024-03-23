@@ -3,6 +3,7 @@
 ## Topic
 - Implement CI/CD using Github Actions
 - Implement Unit Testing using Jest
+- Implement Docker
 
 ## Requirement
 To run this project you must have installed several things below on your pc:
