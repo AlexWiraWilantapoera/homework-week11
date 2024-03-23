@@ -48,7 +48,7 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm run test
+    - run: npm run auto-test
       env:
         WHO_TO_TRUST: ${{ secrets.SECRET_TOKEN }}
         POSTGRES_USER: "postgres"
